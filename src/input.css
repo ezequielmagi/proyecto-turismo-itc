@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Card{
+    @apply h-64 w-48 shadow-md rounded-lg flex-none
+}
+
+.Card:nth-child(odd){
+    @apply bg-red-600
+}
+.Card:nth-child(even){
+    @apply bg-blue-600
+}
+
