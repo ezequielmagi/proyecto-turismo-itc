@@ -6,7 +6,7 @@ Crear una página web utilizando [Tailwindcss](https://tailwindcss.com). La idea
 
 ## Resultado
 
-Para ver la página web en funcionamiento, acceder al siguiente [link](https://travel-itc.vercel.app).
+Para ver la página web en funcionamiento, acceder al siguiente [link](https://vercel.com/ezequielmagi/proyecto-turismo-itc-ujlr).
 
 ## Desarrolladores
 Nombre del alumno
