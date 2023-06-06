@@ -12,16 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Karla:wght@300;400;700&family=Lexend+Deca&family=Montserrat:wght@300;400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="styles.css">
     
 </head>
 <body class="h-screen w-full">
 
-    <main class="w-full h-3/4 p-5 flex flex-col bg-iguazu bg-no-repeat bg-cover mobile:p-0">
+    <main class="w-full h-3/4 p-5 flex flex-col bg-iguazu bg-no-repeat bg-cover sm:p-0">
 
-        <header class="h-9 mb-5 flex justify-end items-center mobile:invisible">
-            <h1 class="text-red-travel font-Montserrat font-bold text-lg max-sm:hidden"><a href="">Turismo ITC</a></h1>
-            <ul class="flex space-x-3 text-red-travel font-Montserrat font-bold text-sm max-sm:hidden min-laptop:text-sm min-laptop:space-x-10">
+        <header class="h-9 mb-5 flex justify-end items-center sm:bg-white sm:h-height-header sm:justify-between sm:p-5 min-laptop:p-8">
+            <h1 id="h1-header" class="text-red-travel font-Montserrat font-bold text-lg max-sm:hidden"><a href="">Turismo ITC</a></h1>
+            <ul id="lista-header" class="flex space-x-3 text-red-travel font-Montserrat font-bold text-sm max-sm:hidden min-laptop:text-sm min-laptop:space-x-10">
                 <li><a href="">Lugares</a></li>
                 <li><a href="">Alojamientos</a></li>
                 <li><a href="">FAQs</a></li>
@@ -29,24 +29,24 @@
             </ul> 
 
             <div>
-                <button class="max-sm:hidden">
-                    <i class="fa-solid fa-magnifying-glass text-red-travel"></i>
+                <button id="b-lupa-header" class="max-sm:hidden text-red-travel">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button class="h-8 w-14 rounded-full bg-white shadow-sm sm:shadow-none sm:bg-transparent">
-                    <i class="fa-solid fa-moon text-red-travel"></i>
+                <button id="b-dark-theme" class="h-8 w-14 rounded-full bg-white shadow-sm sm:shadow-none sm:bg-transparent text-red-travel ">
+                    <i class="fa-solid fa-moon"></i>
                 </button> 
-                <button class="mobile:hide">
-                    <i class="fa-solid fa-user text-dark-gray-travel"></i>
+                <button id="b-user-header" class="max-sm:hidden text-red-travel">
+                    <i class="fa-solid fa-user"></i>
                 </button>
             </div>
         </header>
 
-        <footer class="p-10 h-full flex flex-col justify-between sm:ps-5  sm:hide">
-            <input class="mx-auto w-3/6 h-12 rounded-full text-center shadow-sm outline-none sm:hidden" type="search" placeholder="Cataratas">
-            <p class="text-red-travel border-red-travel border-2 text-2xl font-Montserrat font-bold w-72 rounded-2xl p-4 bg-white/50 max-mobile::hidden min-laptop:p-8 min-laptop:text-4xl min-laptop:w-wheader-title-tablet">
+        <footer class="h-full flex flex-col justify-between sm:ps-5 sm:justify-normal sm:space-y-5 min-laptop:pt-10">
+            <input class="h-12 rounded-full text-center shadow-sm outline-none sm:hidden" type="search" placeholder="Cataratas">
+            <p id="p-titulo-header" class="text-red-travel border-red-travel border-2 text-2xl font-Montserrat font-bold w-72 rounded-2xl p-4 bg-white/50 max-sm:hidden min-laptop:p-8 min-laptop:text-4xl min-laptop:w-wheader-title-tablet">
                 Encuentra ese lugar ideal para tus vacaciones soñadas
             </p>
-            <button class="w-48 h-12 mx-auto text-red-travel rounded-full bg-white shadow-sm sm:mx-0 min-laptop:font-semibold">
+            <button id="b-mas-header" class="w-48 h-12 mx-auto text-red-travel rounded-full bg-white shadow-sm sm:mx-0 min-laptop:font-semibold">
                 Explorar más
             </button>
         </footer>
@@ -55,10 +55,10 @@
 
     <section class="p-4 mt-3">
 
-        <h2 class="text-xl text-red-travel font-bold min-laptop:text-2xl">Nuestras recomendaciones</h2>
+        <h2 id="h2-sec-cards" class="text-xl text-red-travel font-bold min-laptop:text-2xl">Nuestras recomendaciones</h2>
         <article class="w-auto h-72 flex items-center overflow-x-auto overscroll-x-contain space-x-6 min-laptop:h-80">
 
-            <div class="Card">
+            <div id="card-sec-cards" class="Card">
                 <img class="ImgCard" src="https://i.postimg.cc/wMf9bKLW/Any-Conv-com-puerto-iguazu.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat min-laptop:text-xl">
@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="Card">
+            <div id="card-sec-cards-1" class="Card">
                 <img class="ImgCard" src="https://i.postimg.cc/3NJKBr44/Any-Conv-com-ushuaia.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat min-laptop:text-xl">
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="Card">
+            <div id="card-sec-cards-2" class="Card">
                 <img class="ImgCard min-laptop:hidden" src="https://i.postimg.cc/N0mfGzvM/Any-Conv-com-cordob.webp" alt="">
                 <img class="ImgCard max-min-laptop:hidden" src="https://i.postimg.cc/9MBmZwMH/Any-Conv-com-isla92.webp" alt="">
                 <div class="p-4">
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="Card">
+            <div id="card-sec-cards-3" class="Card">
                 <img class="ImgCard min-laptop:hidden" src="https://i.postimg.cc/FzSvWSSD/photo-1589481169991-40ee02888551.webp" alt="">
                 <img class="ImgCard max-min-laptop:hidden" src="https://i.postimg.cc/W1Q1vPKC/Any-Conv-com-cafayate.webp" alt="">
                 <div class="p-4">
@@ -112,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="Card max-min-laptop:hidden">
+            <div id="card-sec-cards-4" class="Card max-min-laptop:hidden">
                 <img class="ImgCard" src="https://i.postimg.cc/C10MRsw-4/Any-Conv-com-calafate.webp" alt="">
                 <div class="p-4">
                     <h3 class="font-bold font-Montserrat text-xl">
@@ -166,41 +166,41 @@
 
 
     <section class="flex flex-col px-8 py-10">
-        <h5 class="text-2xl text-red-travel font-bold font-Montserrat min-laptop:text-3xl">Preguntas frecuentes:</h5>
+        <h5 id="h5-sec-preg" class="text-2xl text-red-travel font-bold font-Montserrat min-laptop:text-3xl">Preguntas frecuentes:</h5>
 
         <article class="my-3">
-            <h5 class="Titulo_pago">
+            <h5 id="h5-sec-preg-0" class="Titulo_pago">
                 Metodos de pago
             </h5>
-            <p class="Parrafo_pago">
+            <p id="p-sec-preg-0" class="Parrafo_pago">
                 Aceptamos VISA, MasterdCard, AmericanExpress, Paypal y Binance.
             </p>
         </article>
 
         <article class="my-3">
-            <h5 class="Titulo_pago">
+            <h5 id="h5-sec-preg-1" class="Titulo_pago">
                 Politicas de cancelación
             </h5>
-            <p class="Parrafo_pago">
+            <p id="p-sec-preg-1" class="Parrafo_pago">
                 Una vez realizado el pago tiene 24hrs para arrepentirse. Pasado ese tiempo no devolvera el pago.
             </p>
         </article>
 
         <article class="my-3">
-            <h5 class="Titulo_pago">
+            <h5 id="h5-sec-preg-2" class="Titulo_pago">
                 Extension de estadia
             </h5>
-            <p class="Parrafo_pago">
+            <p id="p-sec-preg-2" class="Parrafo_pago">
                 En caso de querer extender su estadia en el destino vacacional elegido estará sujeto a disponibilidad hotelera.
             </p>
         </article>
         
     </section>
 
-    <section class="p-5 bg-gray-travel">
+    <section id="footer" class="p-5 bg-gray-travel">
 
-        <h6 class="text-dark-gray-travel text-lg font-semibold font-Montserrat">Nosotros</h6>
-        <ul class="text-dark-gray-travel text-base font-Montserrat font-medium">
+        <h6 id="h6-footer" class="text-dark-gray-travel text-lg font-semibold font-Montserrat">Nosotros</h6>
+        <ul id="lista-footer" class="text-dark-gray-travel text-base font-Montserrat font-medium">
             <li>Inversiones</li>
             <li>Trabaja con nosotros</li>
             <li>Políticas de privacidad</li>
@@ -216,5 +216,6 @@
     </section>
 
     <script src="https://kit.fontawesome.com/71e127b5d0.js" crossorigin="anonymous"></script>
+    <script src="dark-theme.js"></script>
 </body>
 </html>
