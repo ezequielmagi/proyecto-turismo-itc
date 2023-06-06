@@ -9,5 +9,4 @@ Crear una página web utilizando [Tailwindcss](https://tailwindcss.com). La idea
 Para ver la página web en funcionamiento, acceder al siguiente [link](https://travel-itc.vercel.app).
 
 ## Desarrolladores
-
-[jaglux12](https://github.com/jaglux12)
+Nombre del alumno
