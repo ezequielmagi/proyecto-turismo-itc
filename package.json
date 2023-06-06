@@ -1,16 +1,12 @@
 {
-  "name": "proyecto-turismo-itc",
+  "name": "turismo-itc",
   "version": "1.0.0",
-  "description": "es un proyecto del curso de desarrollo web utilizando tailwindcss ",
+  "description": "página de turismo itc",
   "main": "index.js",
   "scripts": {
-    "tw:build": "tailwind -i ./src/input.css -o ./dist/output.css --watch",
-    "prod": "tailwind -i ./src/input.css -o ./dist/output.css --minify"
+    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
-  "keywords": [
-    "turismo"
-  ],
-  "author": "Ezequiel Magi",
+  "author": "jaglux12",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.3.1"

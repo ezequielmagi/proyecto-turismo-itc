@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.Card{
-    @apply h-64 w-48 shadow-md rounded-lg flex-none
+.Card {
+    @apply h-64 w-48 shadow-md rounded-lg flex-none bg-black min-laptop:w-64 min-laptop:h-72
 }
 
 .Card:nth-child(odd){
-    @apply bg-red-600
-}
-.Card:nth-child(even){
-    @apply bg-blue-600
+    @apply bg-green-travel text-white
 }
 
+.Card:nth-child(even){
+    @apply bg-white text-blue-travel
+}
+
+.CardFull {
+    @apply h-height-card-full w-full bg-red-50 rounded-xl p-7 bg-cover bg-center shadow-md
+}
+
+.ImgCard{
+    @apply rounded-t-lg h-4/6 w-full
+}
+
+.Titulo_pago{
+    @apply text-red-travel text-base font-Montserrat font-semibold min-laptop:text-2xl
+}
+
+.Parrafo_pago{
+    @apply font-Montserrat text-xs font-medium min-laptop:text-sm
+}
