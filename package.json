@@ -6,7 +6,7 @@
   "scripts": {
     "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
-  "author": "jaglux12",
+  "author": "Ezequiel Magi",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.3.1"
